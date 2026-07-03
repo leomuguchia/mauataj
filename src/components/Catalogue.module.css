@@ -1,0 +1,126 @@
+.section {
+  padding: 36px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.blobTr {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(200,57,26,0.13) 0%, rgba(200,57,26,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.blobBl {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(222,130,40,0.12) 0%, rgba(222,130,40,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.blobMid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(200,57,26,0.05) 0%, rgba(200,57,26,0) 70%);
+  pointer-events: none;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  margin-bottom: 5px;
+}
+
+.title {
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.tab {
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid var(--border-2);
+  background: var(--surface);
+  color: var(--ink-2);
+  transition: all 0.15s;
+}
+.tab:hover { background: var(--surface-3); }
+
+.activeTab {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+.activeTab:hover { background: var(--brand); opacity: 0.9; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 400px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.cardReveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.cardReveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bulkNotice {
+  background: var(--surface-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  font-size: 13px;
+  color: var(--ink-2);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.bulkNotice strong { color: var(--ink); }

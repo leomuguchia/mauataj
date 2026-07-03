@@ -1,0 +1,72 @@
+.nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+  cursor: default;
+  user-select: none;
+}
+
+.main {
+  font-family: 'Georgia', serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--ink);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.foods {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  color: var(--brand);
+  margin-top: -10px;
+  transform: rotate(-3deg);
+  transform-origin: right bottom;
+}
+
+.cartBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--wa);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  position: relative;
+}
+
+.cartBtn:hover {
+  opacity: 0.88;
+}
+
+.badge {
+  background: #fff;
+  color: var(--wa-dark);
+  font-size: 11px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

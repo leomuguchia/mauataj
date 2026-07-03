@@ -1,0 +1,66 @@
+.contact {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--ink-2);
+  max-width: 400px;
+  margin: 0 auto 22px;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.callBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand);
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.callBtn:hover { opacity: 0.88; }
+
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--wa);
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.waBtn:hover { opacity: 0.88; }
+
+.footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 12px;
+}
+.footer strong { color: #fff; }
