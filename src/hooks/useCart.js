@@ -1,9 +1,10 @@
 import { useState } from 'react'
 
 const WA_NUMBER = '254700346660'
+const EMAIL = 'mauatajfoods@gmail.com'
 
 export function useCart() {
-  const [cart, setCart] = useState({}) // { productId: qty }
+  const [cart, setCart] = useState({}) 
 
   function add(id, step = 1) {
     setCart(c => ({ ...c, [id]: (c[id] || 0) + step }))
